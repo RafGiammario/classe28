@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-size: 15px;
+}
+
+.text-box {
+  height: 150px;
+  border: 15px solid black;
+  padding: 10px;
+  font-size: 1.5em;
+  background-color: blue;
+  color: white;
+}
+
+.starred {
+  margin-top: 100px;
+  margin-left: 100px;
+  color: red;
+}
+
+.starred-mod {
+  color: green;
+}
+
+ul {
+  margin-left: 100px;
+  list-style: none;
+}
+
+.lista h2:before {
+  content: '\25bc';
+}

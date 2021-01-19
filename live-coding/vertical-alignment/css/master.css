@@ -1,0 +1,20 @@
+img {
+  vertical-align: middle;
+}
+
+h1 {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.header {
+  height: 300px;
+  line-height: 300px;
+  text-align: center;
+}
+
+.center {
+  text-align: center;
+  height: 150px;
+  line-height: 150px;
+}

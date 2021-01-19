@@ -1,0 +1,24 @@
+/* #testo-prova {
+  background-color: blue;
+  color: white;
+} */
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+div {
+  color: green;
+}
+
+div.testo_prova, .testo_prova {
+  background-color: blue;
+  font-size: 40px;
+  width: 300px;
+  /* height: 50px; */
+  border: 15px solid purple;
+}
+
+.text-red {
+  color: red;
+}
