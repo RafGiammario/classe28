@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+.header {
+  padding: 10px 15px;
+}
+
+.logo_title {
+  display: inline;
+  vertical-align: middle;
+}
+
+.logo {
+  vertical-align: middle;
+}
+
+/*--- HEADER ---*/
+
+
+/*--- UTILITY ---*/
+.bg-grey {
+  background-color: lightgrey;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 0 15px;
+}
+
+.pt-3 {
+  padding-top: 3em;
+}
+
+.pb-1 {
+  padding-bottom: 1em;
+}
+
+.br-1 {
+  border-radius: 0.25em;
+}
+
+/*--- UTILITY ---*/
+
+/*--- BUTTONS ---*/
+
+.action {
+  margin: 0 -15px;
+  padding: 10px 15px;
+  border-bottom: 2px solid lightgrey;
+}
+
+button.btn {
+  background-color: #fff;
+  color: grey;
+  border: 2px solid grey;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-weight: bold;
+}
+
+button.btn-primary {
+  border-color: #48ADF1;
+  background-color: #48ADF1;
+  color: #fff;
+}
+
+button.btn:disabled {
+  color: lightgrey;
+  border-color: lightgrey;
+}
+
+/*--- BUTTONS ---*/
+
+.todos {
+  padding-top: 1.5em;
+}
+
+.todos ul {
+  list-style: none;
+}
+
+.todos ul.sections > li:before {
+  content: '\25be';
+  font-size: 20px;
+}
+
+.todos ul.sections h3 {
+  display: inline;
+}
+
+.todos ul.task  {
+  padding: 10px 0;
+}
+
+.todos ul.task li {
+  padding: 5px 0;
+}
+
+.todos ul.task li:before {
+  font-size: 20px;
+  padding: 2px;
+  border: 2px solid;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.todos ul.sections li.checked:before {
+  content: '\2714';
+  color: green;
+  border-color: green;
+}
+
+.todos ul.sections li.times:before {
+  content: '\2718';
+  color: red;
+  border-color: red;
+}
+
+/*--- BADGE ---*/
+.badge {
+  background-color: #fff;
+  color: grey;
+  border: 2px solid grey;
+  border-radius: 15px;
+  padding: 5px 10px;
+  font-weight: bold;
+  font-size: 8px;
+}
+
+.badge-primary {
+  border-color: #48ADF1;
+  background-color: #48ADF1;
+  color: #fff;
+}
