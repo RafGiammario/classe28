@@ -1,0 +1,106 @@
+.w-100 {
+  width: 100%;
+}
+
+.w-25 {
+  width: 25%;
+}
+
+thead {
+  height: 30px;
+  background-color: #20a9e5;
+  color: #fff;
+  text-align: left;
+}
+
+/* table.alternate tbody tr:nth-child(2n+1) {
+  background-color: #b1e5f2;
+} */
+
+table.alternate > tbody > tr:nth-child(2n+1) {
+  background-color: #b1e5f2;
+}
+
+/* li.second + li {
+  background-color: blue;
+  color: white;
+} */
+
+li.second ~ li {
+  background-color: blue;
+  color: white;
+}
+
+/* ul + li {
+  background-color: blue;
+  color: white;
+} */
+
+ul li:only-child {
+  color: green;
+  font-weight: bold;
+}
+
+div:only-child {
+  background-color: green;
+}
+
+div p:only-of-type {
+  background-color: green;
+}
+
+div[class^="p"] {
+  color: green;
+}
+
+[class*="bg"] {
+  background-size: 100%;
+}
+
+[class^="bg-"] {
+  background-size: 100%;
+}
+
+[class$="-bg"] {
+  background-size: 100%;
+}
+
+[class*="bg-"] {
+  background-size: 100%;
+}
+
+.mb-pos {
+  margin-bottom: 30px;
+  border: 2px solid green;
+  height: 200px;
+}
+
+/* div {
+  border-collapse: collapse;
+} */
+
+.ml-neg {
+  margin-left: 15px;
+  border: 2px solid red;
+  height: 100px;
+  display: inline-block;
+}
+
+.mr-pos {
+  margin-right: 30px;
+  border: 2px solid green;
+  height: 200px;
+  display: inline-block;
+}
+
+.mb-pos {
+  margin-bottom: 30px;
+  border: 2px solid green;
+  height: 200px;
+}
+
+.mt-pos {
+  margin-top: 30px;
+  border: 2px solid green;
+  height: 200px;
+}
