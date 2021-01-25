@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body.debug div[class^="col-"] > div {
+  height: 50px;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.container-fluid {
+  width: 100%;
+}
+
+.row {
+  margin: 0 -15px;
+}
+
+.row:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class^="col-"] {
+  float: left;
+  padding: 0 15px;
+}
+
+.col-100 {
+  width: 100%;
+}
+
+.col-25 {
+  width: 25%;
+}
+
+.col-50 {
+  width: 50%;
+}
+
+.col-75 {
+  width: 75%;
+}
+
+.col-60 {
+  width: 60%;
+}
+
+.col-40 {
+  width: 40%;
+}
+
+.bg-yellow {
+  background-color: yellow;
+}
+
+.bg-pink {
+  background-color: pink;
+}
+
+.bg-purple {
+  background-color: purple;
+}
+
+.bg-cyan {
+  background-color: cyan;
+}
+
+.mt-1 {
+  margin-top: 1em;
+}

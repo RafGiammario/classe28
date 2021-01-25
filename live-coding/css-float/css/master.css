@@ -1,0 +1,51 @@
+body {
+  height: 1000px;
+}
+
+/* body.debug div {
+  height: 50%;
+}
+
+.green {
+  background-color: green;
+}
+
+.green:after {
+  clear: right;
+}
+
+.blue {
+  float: left;
+  width: 20%;
+  background-color: blue;
+}
+
+.red {
+  float: right;
+  width: 20%;
+  background-color: red;
+} */
+
+.row:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.row {
+  background-color: green;
+}
+
+.col-prova {
+  background-color: red;
+  float: left;
+  width: 20%;
+  height: 100px;
+}
+
+.col-altra-prova {
+  background-color: blue;
+  float: left;
+  width: 20%;
+  height: 100px;
+}

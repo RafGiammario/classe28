@@ -1,0 +1,69 @@
+.bg-blue {
+  background-color: blue;
+  height: 200px;
+  width: 200px;
+}
+
+.bg-red {
+  background-color: red;
+  height: 200px;
+  width: 200px;
+  position: relative;
+  left: 25px;
+}
+
+.bg-green {
+  background-color: green;
+  height: 400px;
+  width: 400px;
+
+  margin-top: 20px;
+  position: relative;
+}
+
+.bg-blue1 {
+  background-color: blue;
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  top: 30px;
+  left: 50%;
+}
+
+.bg-red1 {
+  background-color: red;
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  left: 25px;
+}
+
+
+.bg-green1 {
+  background-color: green;
+  height: 160px;
+  width: 50px;
+
+  margin-top: 20px;
+  position: relative;
+}
+
+.bg-blue2 {
+  background-color: blue;
+  height: 50px;
+  width: 40px;
+}
+
+.bg-red2 {
+  background-color: red;
+  height: 50px;
+  width: 40px;
+  position: relative;
+  top: -10px;
+}
+
+.bg-yellow {
+  background-color: yellow;
+  height: 50px;
+  width: 40px;
+}

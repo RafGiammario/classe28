@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 1em 0;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.row {
+  margin: 0 -15px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+[class^="col-"]{
+  float: left;
+  padding: 0 15px;
+}
+
+.col-100 {
+  width: 100%;
+}
+
+.col-50 {
+  width: 50%;
+}
+
+.col-25 {
+  width: 25%;
+}
+
+.mt-1 {
+  margin-top: 1em;
+}
+
+.mb-1 {
+  margin-bottom: 1em;
+}
+
+.pb-1 {
+  padding-bottom: 1em;
+}
+
+#logo img {
+  height: 70px;
+  padding-right: 20px;
+  border-right: 1px solid #e5e5e5;
+}
+
+nav {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  text-transform: uppercase;
+  padding-right: 10px;
+}
+
+nav ul li a {
+   color: #858585;
+   text-decoration: none;
+}
+
+.jumbo {
+  background: url('../img/banner.jpg') no-repeat center;
+  background-size: cover;
+  height: 500px;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.jumbo-text {
+  background-color: rgba(0, 0, 0, 0.2);
+  height: 100%;
+  padding-top: 390px;
+  padding-left: 30px;
+  padding-right: 200px;
+  border-radius: 10px;
+}
+
+.title {
+  margin: 40px 0;
+}
+
+.title h4{
+  font-weight: normal;
+  color: #929292;
+}
+
+.img-box {
+  border-radius: 10px;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.img-box .overlay {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+#money {
+  background-image: url('../img/img-1.jpg');
+}
+
+#computer {
+  background-image: url('../img/banner-2.jpg');
+}
+
+/* #bulb {
+  background-image: url('../img/img-3.jpg');
+} */
+
+.text-box h4 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+footer {
+  text-align: center;
+}
+
+.love:after {
+  content: '\2764';
+  color: #ff0000;
+}
+
+.p-relative {
+  position: relative;
+}
+
+.p-relative img {
+  width: 100%;
+}
+
+.overlay-prel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
