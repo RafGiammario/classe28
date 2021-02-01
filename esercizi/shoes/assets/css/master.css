@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  margin-right: 15px;
+  margin-top: 20px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  padding-left: 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  background-color: #ffffff;
+  border-radius: 50%;
+  padding: 10px 13px;
+}
+
+section {
+  height: 100vh;
+  position: relative;
+  color: #ffff00;
+  font-size: 48px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+section > div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.box {
+  width: 40%;
+}
+
+.box > img {
+  width: 100%;
+}
+
+#superga {
+  background-color: #ff0000;
+}
+
+#convers {
+  background-color: #ffff00;
+}
+
+#adidas {
+  background-color: #008800;
+}
+
+.text-green {
+  color: #008800;
+}
