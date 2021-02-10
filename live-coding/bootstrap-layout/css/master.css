@@ -1,0 +1,41 @@
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.navbar-default {
+  background-color: lightblue;
+  border-color: purple;
+}
+
+.navbar-brand {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.btn {
+  padding: 30px 52px;
+}
+
+.btn-default {
+  color: #fff;
+  background-color: #0000FF;
+  border-color: #0000F5;
+}
+
+.btn-default:hover {
+  color: #fff;
+  background-color: #0000E5;
+  border-color: #0000A3;
+}
+
+
+.my-btn-default {
+  color: #fff;
+  background-color: #FF0000;
+  border-color: #F50000;
+}
+
+.border {
+  border: 2px solid #eeeeee;
+}
