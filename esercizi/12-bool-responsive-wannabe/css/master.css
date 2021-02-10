@@ -1,0 +1,101 @@
+#lezioni img {
+  /* per centrare orizzontalmente */
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#lezioni {
+  text-align: center;
+}
+
+#steps {
+  text-align: center;
+}
+
+#why {
+  text-align: center;
+}
+
+#why img {
+  background-color: #428bca;
+  border-radius: 50%;
+  padding: 30px;
+  box-sizing: content-box;
+}
+
+.grey {
+  background-color: #f9f9f9;
+}
+
+img {
+  height: 100px;
+}
+
+.p-10 {
+  padding: 10px;
+}
+
+h1 {
+  padding: 10px 0;
+}
+
+.py-10 {
+  padding: 10px 0;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+@media all and (min-width: 768px) {
+  #lezioni {
+      background: none;
+  }
+}
+
+@media all and (min-width: 992px) {
+  img {
+    height: 200px;
+  }
+
+  .container {
+    width: 992px;
+    max-width: none;
+  }
+
+  #lezioni, #why, #steps {
+    margin-top: 100px;
+  }
+
+  .mt-20 {
+    margin-top: 80px;
+  }
+
+  .py-10 {
+    padding-top: 20px;
+    padding-bottom: 0;
+  }
+
+  #why {
+    background-color: #f9f9f9;
+  }
+
+  h1 {
+    padding: 0;
+  }
+
+  h3 {
+    margin: 1em 0;
+  }
+}
+
+#why .col-md-6 {
+  min-height: 400px;
+  position: relative;
+}
+
+#why hr {
+  position: absolute;
+  bottom: 0;
+}

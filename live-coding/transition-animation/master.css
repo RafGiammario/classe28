@@ -1,0 +1,111 @@
+/* .square {
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+  transition: background 2s ease 0s;
+}
+
+.square:hover {
+  background-color: red;
+} */
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  position: relative;
+  height: 100vh;
+}
+
+/* .square {
+ height: 100px;
+ width: 100px;
+ background-color: blue;
+ position: absolute;
+ top: 0;
+ left: 0;
+ animation-name: touch-limits;
+ animation-duration: 12s;
+ animation-timing-function: linear;
+}
+
+
+@keyframes touch-limits {
+  0% {
+    top: 0;
+    left: 0;
+  }
+
+  12% {
+    top: 0;
+    left: calc(100% - 100px);
+  }
+
+  25% {
+    top: 0;
+    left: calc(100% - 100px);
+  }
+
+  37% {
+    top: calc(100% - 100px);
+    left: calc(100% - 100px);
+  }
+
+  50% {
+    top: calc(100% - 100px);
+    left: calc(100% - 100px);
+  }
+
+  62% {
+    top: calc(100% - 100px);
+    left: 0;
+  }
+
+  75% {
+    top: calc(100% - 100px);
+    left: 0;
+  }
+
+  87% {
+    top: 0;
+    left: 0;
+  }
+
+  100% {
+    top: 0;
+    left: 0;
+  }
+} */
+
+
+/* .blur {
+  filter: blur(10px);
+}
+
+.seppia {
+  filter: sepia(60%);
+}
+
+.grayscale {
+  filter: grayscale(60%);
+}
+
+.invert {
+  filter: invert(60%);
+}
+
+.invert-grayscale {
+  filter: invert(60%) grayscale(60%);
+} */
+
+
+img {
+  filter: none;
+  transition: filter 2s ease;
+}
+
+img.invert-grayscale:hover {
+  filter: invert(60%) grayscale(60%);
+}
