@@ -1,0 +1,114 @@
+.my-navbar-primary {
+  background-color: #2c3e50;
+  border: 0;
+  border-radius: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.navbar-default .navbar-brand {
+  color: #FFF;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #FFF;
+}
+
+.navbar-default .navbar-collapse {
+  border-color: #2c3e50;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: #FFF;
+}
+
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover {
+  color: #1abc9c;
+}
+
+#jumbtron {
+  padding-top: 150px;
+  padding-bottom: 80px;
+  background-color: #1abc9c;
+  color: #FFF;
+}
+
+#jumbtron img {
+  width: 270px;
+  margin-bottom: 48px;
+}
+
+#jumbtron h1 {
+  font-size: 44px;
+  line-height: 44px;
+}
+
+#jumbtron p {
+  font-size: 20px;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.divider {
+  width: 310px;
+  margin: 15px auto;
+}
+
+.divider i {
+  font-size: 32px;
+}
+
+.divider:before, .divider:after {
+  content: '';
+  display: block;
+  width: 130px;
+  height: 4px;
+  margin-top: 12px;
+  background-color: #FFF;
+}
+
+.divider:before {
+  float: left;
+}
+
+.divider:after {
+  float: right;
+}
+
+@media all and (min-width: 992px) {
+  .my-navbar-primary {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .navbar-default .navbar-brand {
+    font-size: 1.75em;
+  }
+
+  .navbar-default .navbar-nav>li>a {
+    font-size: 16px;
+    padding: 1em;
+  }
+
+  #jumbtron h1 {
+    font-size: 64px;
+    line-height: 56px;
+  }
+
+  #jumbtron p {
+    font-size: 24px;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 1140px;
+  }
+}

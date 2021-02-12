@@ -1,4 +1,4 @@
-.container {
+/* .container {
   width: 80%;
   margin: 0 auto;
 }
@@ -38,4 +38,42 @@
 
 .border {
   border: 2px solid #eeeeee;
+} */
+
+.my_navbar_red {
+  background-color: red;
+}
+
+.navbar.my_navbar_red {
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.my_navbar_red a {
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.navbar-toggle.my-icon {
+  border: 1px solid white;
+}
+
+.navbar-toggle.my-icon .icon-bar {
+  background-color: white;
+}
+
+.navbar-toggle.my-icon:hover,
+.navbar-toggle.my-icon:focus,
+.navbar-toggle.my-icon:active
+ {
+  border: 1px solid lightgrey;
+}
+
+.navbar-toggle.my-icon:hover .icon-bar,
+.navbar-toggle.my-icon:focus .icon-bar,
+.navbar-toggle.my-icon:active .icon-bar
+{
+  background-color: lightgrey;
 }
