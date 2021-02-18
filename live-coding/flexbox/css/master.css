@@ -1,0 +1,40 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100vh;
+}
+
+.flex-container div {
+  width: 200px;
+  height: 200px;
+  flex-shrink: 0;
+  flex-basis: 200px;
+}
+
+.red {
+  flex-grow: 0;
+  background-color: red;
+}
+
+.blue {
+  flex-grow: 2;
+  background-color: blue;
+}
+
+.yellow {
+  flex-grow: 1;
+  background-color: yellow;
+}
+
+.green {
+  flex-grow: 0;
+  background-color: green;
+}
