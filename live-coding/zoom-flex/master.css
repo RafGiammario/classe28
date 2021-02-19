@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(51, 49, 54);
+}
+
+header {
+  height: 40px;
+  text-align: right;
+  padding: 0 5px;
+}
+
+header button {
+  background-color: rgba(90, 87, 94, 0.7);
+  color: #FFF;
+  padding: 5px 15px;
+  border-radius: 10px;
+}
+
+main {
+  height: calc(100vh - 40px - 100px);
+  overflow-y: auto;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: flex-start;
+}
+
+main .persona {
+  height: 200px;
+  width: 300px;
+  border: 2px solid rgb(51, 49, 54);
+  background-color: rgb(90, 87, 94);
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+}
+
+main .persona.active {
+  border: 2px solid green;
+}
+
+.persona img {
+  max-width: 100%;
+}
+
+.persona .nome {
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
+
+  font-size: 16px;
+
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 5px 15px;
+  border-radius: 10px;
+}
+
+.persona.mute .nome:before {
+  font-family: "Font Awesome 5 Free";
+  content: '\f539';
+  font-weight: 900;
+  color: red;
+  padding-right: 10px;
+}
+
+
+footer {
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #FFF;
+  padding: 0 10px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .controlli-sinistra,
+footer .controlli-destra {
+  display: flex;
+}
+
+footer .controllo {
+  min-width: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+button.end-meeting {
+  background-color: red;
+  color: #FFF;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 700;
+}
