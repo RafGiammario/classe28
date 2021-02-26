@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* LAYOUT WEBAPP */
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: calc(100vw - 230px);
+  height: 80px;
+  background-color: rgba(255, 0, 0, 0.5);
+}
+
+main {
+  height: calc(100vh - 120px);
+  background-color: blue;
+  display: flex;
+}
+
+aside {
+  height: 100%;
+  width: 230px;
+  background-color: yellow;
+}
+
+aside section {
+  background-color: lightgrey;
+}
+
+div[role="app-content"] {
+  width: calc(100% - 230px);
+  overflow-y: auto;
+  padding-top: 100px
+}
+
+footer {
+  height: 120px;
+  width: 100%;
+  background-color: green;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+/* LAYOUT WEBAPP */
+
+/* SIDEBAR */
+aside {
+  display: flex;
+  flex-direction: column;
+}
+
+aside > div {
+  width: 100%;
+}
+
+.navigation {
+  background-color: blue;
+}
+
+.profile {
+  height: 50px;
+  background-color: black;
+  margin-top: auto;
+}
+
+ul.nav {
+  list-style: none;
+  background-color: lightgrey;
+  color: white;
+}
+ul.nav li.nav-item {
+  padding: 10px 15px;
+}
+
+.playlist ul.nav {
+  height: 50vh;
+  overflow-y: auto;
+}
+/* SIDEBAR */
+
+/* APP CONTENT */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  padding: 10px 15px;
+}
+
+section {
+  margin: 30px 0;
+}
+
+section .wall {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.poster {
+  width: calc(100%/2 - 10px);
+  height: 100px;
+  margin: 5px;
+  background-color: black;
+}
+
+@media screen and (min-width: 768px) {
+  .poster {
+    width: calc(100%/4 - 10px);
+  }
+}
+
+@media screen and (min-width: 991px) {
+  .poster {
+    width: calc(100%/6 - 10px);
+  }
+}
+/* APP CONTENT */
+
+/* FOOTER */
+footer {
+  display: flex;
+}
+
+footer > * {
+  background-color: red;
+  border: 3px solid green;
+}
+
+.player-album  {
+  flex: 1 0 100px;
+
+  display: flex;
+  align-items: center;
+}
+
+.controls {
+  flex: 2 0 150px;
+}
+
+.controls-sources {
+  flex: 1 0 80px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.player-album .album-controls {
+  display: flex;
+  flex-direction: column;
+}
+
+.album-controls > * {
+  /* background-color: red;
+  height: 20px;
+  width: 20px; */
+  margin: 5px;
+}
+
+
+@media screen and (min-width: 480px) {
+  .player-album .album-controls {
+    flex-direction: row;
+  }
+
+  .album-controls > * {
+    margin: 0 5px;
+  }
+}
+/* FOOTER */
