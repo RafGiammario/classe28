@@ -1,0 +1,17 @@
+.live-coding {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background-color: orange;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.live-coding span {
+  display: none;
+}

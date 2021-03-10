@@ -1,0 +1,11 @@
+p {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+.btn-active {
+  color: red;
+}
