@@ -1,0 +1,59 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+}
+
+.sipario {
+  height: 90vh;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.tenda-sinistra,
+.tenda-destra {
+  background-color: red;
+  height: 100%;
+  width: 0;
+}
+
+.tenda-sinistra {
+  border-right: 2px solid black;
+}
+
+.tenda-destra {
+  border-left: 2px solid black;
+}
+
+button {
+  padding: 10px 15px;
+  margin-top: 15px;
+}
+
+@keyframes close {
+  0% {width: 0}
+  100% {width: 50%}
+}
+
+@keyframes open {
+  0% {width: 50%}
+  100% {width: 0}
+}
+
+.active {
+  animation-name: close;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+
+.de-active {
+  animation-name: open;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
