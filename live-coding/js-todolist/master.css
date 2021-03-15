@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+#modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+#modal div {
+  min-width: 450px;
+  max-width: 80vw;
+  min-height: 250px;
+  max-height: 80vh;
+
+  background-color: #fff;
+  border-radius: 15px;
+  border: 2px solid #eee;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#modal.active {
+  display: flex;
+}
+
+#todos {
+  padding-left: 15px;
+  padding-top: 15px;
+}
+
+#todos ul {
+  margin-left: 15px;
+}
+
+#todos ul li {
+  padding: 10px 0;
+}
+
+#todos ul li span {
+  color: red;
+}

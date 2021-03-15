@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="utf-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <link rel="stylesheet" href="master.css">
+  <title>js-dropdown-menu</title>
+</head>
+
+<body>
+  <div class="main-container d-flex jc-center">
+    <div class="menu-container">
+      <nav class="d-flex fg-1">
+        <div class="menu-left d-flex ali-center fg-1">
+          <a href="#"><img class="logo" src="./logo-revolut.png" alt="Logo Revolut"></a>
+          <ul class="d-flex fd-row">
+            <li><a class="menu-active" href="#">Personale</a></li>
+            <li><a href="#">Business</a></li>
+          </ul>
+        </div>
+        <div class="menu-right d-flex jc-end ali-center fg-2">
+          <ul class="d-flex fd-row">
+            <li><a href="#">Tariffazione</a></li>
+            <li class="parent-dropdown">
+              <a href="#">Conti</a>
+              <div class="dropdown">
+                <ul>
+                  <li><a href="#">Standard</a></li>
+                  <li><a href="#">Premium</a></li>
+                  <li><a href="#">Metal<span class="label">Nuovo</span></a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="parent-dropdown">
+              <a href="#">Prodotti</a>
+              <div class="dropdown">
+                <ul>
+                  <li><a href="#">Trasferimenti di denaro</a></li>
+                  <li><a href="#">Vault</a></li>
+                  <li><a href="#">Gestione budget</a></li>
+                  <li><a href="#">Perk<span class="label beta">beta</span></a></li>
+                  <li><a href="#">Criptovaluta</a></li>
+                  <li><a href="#">Assicurazione Smartphone</a></li>
+                  <li><a href="#">Assicurazione medica internazionale</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="parent-dropdown">
+              <a href="#">Azienda</a>
+              <div class="dropdown">
+                <ul>
+                  <li><a href="#">Chi Siamo</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Lavora con noi</a></li>
+                  <li><a href="#">Affiliates<span class="label">Nuovo</span></a></li>
+                  <li><a href="#">Contatto</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="parent-dropdown">
+              <a href="#">Aiuto</a>
+              <div class="dropdown">
+                <ul>
+                  <li><a href="#">Community</a></li>
+                  <li><a href="#">Centro assistenza</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="arrow">
+              <a href="#">IT <i class="fas fa-chevron-down"></i></a>
+              <div class="dropdown">
+                <ul>
+                  <li><a href="#">Italiano</a></li>
+                  <li><a href="#">English</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <a class="btn" href="#">Scarica l'app</a>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <script src="./main.js" charset="utf-8"></script>
+</body>
+
+</html>
