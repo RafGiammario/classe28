@@ -119,15 +119,16 @@ const newStudents = students.map((element, i, array) => {
   return obj;
 });
 
+let pippo = 'Pippo';
 students.map((element, i, array) => {
-  console.log(students);
+  console.log(this); //Pippo
   let obj = {
     ...element,
     iscritto: true
   }
 
   array[i] = obj;
-});
+}, pippo);
 
 console.log(students);
 
