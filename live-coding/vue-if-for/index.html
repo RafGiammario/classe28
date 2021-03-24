@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Vue Intro</title>
+
+</head>
+<body>
+  <div id="root">
+    <h1 v-if="awesome || smile"> Vue is awesome! </h1>
+    <h1 v-else>Oh no 😢
+      <span v-if="">
+        <span v-if=""></span>
+      </span>
+      <span v-else></span>
+    </h1>
+    <!-- <div v-if="type === 'A'">
+      A
+    </div>
+    <div v-else-if="type === 'B'">
+      B
+    </div>
+    <div v-else-if="type === 'C'">
+      C
+    </div>
+    <div v-else>
+      Not A/B/C
+    </div> -->
+    <!-- <button @click="boolean">Cambia</button> -->
+    <!-- <ul>
+      <li v-for="(nome, i) in nomi" v-if="i > 1"> {{ i }} {{ nome }} </li>
+    </ul> -->
+    <ul>
+      <li v-for="todo in todos">
+        <h4> {{ todo.title }} </h4>
+        <p> {{ todo.description }} </p>
+        <button>Edit</button>
+        <button>Delete</button>
+      </li>
+    </ul>
+    <!-- Stampo tutti i numeri da 1 a cento -->
+    <div>
+      <div v-for="numero in numeri()"> {{ numero }} </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <script src="./main.js" charset="utf-8"></script>
+</body>
+</html>
