@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+.slider {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.controls {
+  margin: 0 15px;
+  font-size: 50px;
+}
+
+.slider-navigation {
+  margin-top: 10px;
+}
+
+.slider-navigation i {
+  color: grey;
+  margin: 0 10px;
+}
+
+.slider-navigation i.active {
+  color: black;
+}
