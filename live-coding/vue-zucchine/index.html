@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Vue Zucchine</title>
+
+  <link rel="stylesheet" href="./master.css">
+</head>
+<body>
+  <div id="root">
+    <button type="button" name="button" @click="genera" :disabled="zucchine.length != 0">Produci zucchine</button>
+
+    <div v-if="zucchine.length">
+      <table>
+        <thead>
+          <tr>
+            <th> # </th>
+            <th>Varietà</th>
+            <th>Lunghezza</th>
+            <th>Peso</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr v-for="(zucchina, index) in zucchine">
+            <td> {{ index + 1 }} </td>
+            <td> {{ zucchina.varieta }} </td>
+            <td> {{ zucchina.lunghezza }} </td>
+            <td> {{ zucchina.peso }} </td>
+          </tr>
+        </tbody>
+      </table>
+      <p> Il peso totale è {{ pesoTot(zucchine) }} </p>
+    </div>
+    <button v-if="isSeparable()" type="button" name="button" @click="separa">Separa zucchine</button>
+    <div class="division-tables" v-if="zucchine.length">
+      <div>
+        <h3>Zucchine Corte</h3>
+        <table v-if="zucchineCorte.length">
+          <thead>
+            <tr>
+              <th> # </th>
+              <th>Varietà</th>
+              <th>Lunghezza</th>
+              <th>Peso</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr v-for="(zucchina, index) in zucchineCorte">
+              <td> {{ index + 1 }} </td>
+              <td> {{ zucchina.varieta }} </td>
+              <td> {{ zucchina.lunghezza }} </td>
+              <td> {{ zucchina.peso }} </td>
+            </tr>
+          </tbody>
+        </table>
+        <p> Il peso totale è {{ pesoTot(zucchineCorte) }} </p>
+      </div>
+      <div>
+        <h3>Zucchine Lunghe</h3>
+        <table v-if="zucchineLunghe.length">
+          <thead>
+            <tr>
+              <th> # </th>
+              <th>Varietà</th>
+              <th>Lunghezza</th>
+              <th>Peso</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr v-for="(zucchina, index) in zucchineLunghe">
+              <td> {{ index + 1 }} </td>
+              <td> {{ zucchina.varieta }} </td>
+              <td> {{ zucchina.lunghezza }} </td>
+              <td> {{ zucchina.peso }} </td>
+            </tr>
+          </tbody>
+        </table>
+        <p> Il peso totale è {{ pesoTot(zucchineLunghe) }} </p>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <script src="./main.js" charset="utf-8"></script>
+</body>
+</html>
