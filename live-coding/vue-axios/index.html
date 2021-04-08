@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Vue Axios</title>
+
+</head>
+<body>
+  <div id="root">
+    <h4> {{ nome }} </h1>
+    <button @click="nomeRand">Genera nome random</button>
+
+    <h1>Gioca a chi ha il numero più grande</h1>
+
+    <p>Il numero del PC è: {{ numeroPC }} </p>
+    <p>Il numero del Utente è: {{ numeroUtente }} </p>
+    <p>Il vincitore è : {{ check() }}</p>
+    <button @click="play">Lancia numeri</button>
+
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js" charset="utf-8"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <script src="./main.js" charset="utf-8"></script>
+</body>
+</html>
