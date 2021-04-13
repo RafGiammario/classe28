@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+div.filters {
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.filters > * {
+  margin: 0 10px;
+}
+
+div.filters button {
+  padding: 2px 5px;
+}
+
+div.container {
+  display: flex;
+  flex-wrap: wrap;
+
+  height: 90vh;
+  padding: 10px 0;
+  background-color: darkgray;
+}
+
+div.card {
+  width: calc(100vw/6 - 20px);
+  margin: 0 10px;
+  perspective: 1000px;
+}
+
+div.card div.card-inner {
+  position: relative;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+div.card:hover div.card-inner {
+  transform: rotateY(180deg);
+}
+
+div.card div.card-cover {
+  position: absolute;
+  width: 100%;
+  padding-top: 100%;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+div.card .card-container-info {
+  position: absolute;
+  width: 100%;
+  padding-top: 100%;
+
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #EEE;
+
+  transform: rotateY(180deg);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+div.card .card-container-info .card-info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.author {
+  font-size: 14px;
+  font-style: italic;
+}
+
+.genre {
+  font-weight: bold;
+}

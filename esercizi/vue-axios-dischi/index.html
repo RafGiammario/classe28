@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Vue Dischi</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./master.css">
+</head>
+<body>
+  <div id="root">
+    <div class="filters">
+      <select v-model="genreFilter">
+        <option value="">All</option>
+        <option v-for="genre in genreOptions" :value="genre"> {{ genre }} </option>
+      </select>
+      <button @click="yearSort">
+        Ordina per anno
+        <i class="fas" :class="(orderDesc) ? 'fa-arrow-down' : 'fa-arrow-up' "></i>
+      </button>
+    </div>
+    <div class="container">
+      <div class="card"
+        v-for="disk in disks"
+        v-if="disk.genre == genreFilter || genreFilter == ''">
+        <div class="card-inner">
+          <div
+            class="card-cover"
+            :style="`background-image: url('${disk.poster}');`"
+            >
+          </div>
+          <div class="card-container-info">
+            <div class="card-info">
+              <div>
+                <span class="title"> {{ disk.title }} </span> -
+                <span> {{disk.year}} </span>
+              </div>
+              <span class="author"> {{ disk.author }} </span>
+              <span class="genre"> {{ disk.genre }} </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js" charset="utf-8"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <script src="./main.js" charset="utf-8"></script>
+</body>
+</html>
