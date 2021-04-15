@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+  <link rel="stylesheet" href="./master.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"></script>
+  <title>Boolflix</title>
+</head>
+<body>
+  <div id="root" class="container">
+    <header>
+        <div class="container">
+            <img src="https://logos-world.net/wp-content/uploads/2020/04/Netflix-Logo.png" alt="logo" />
+            <input type="text" v-model="query" placeholder="Cerca un film o una serie" @keyup.enter="search">
+        </div>
+    </header>
+
+    <div class="movies-container container">
+        <div v-for="movie in movies" class="movie">
+          <img v-if="movie.poster_path" :src="`https://image.tmdb.org/t/p/w342/${movie.poster_path}`" alt="">
+          <img v-else src="https://www.altavod.com/assets/images/poster-placeholder.png" alt="">
+
+          <!-- <img @error="errorSRC" :src="`https://image.tmdb.org/t/p/w342/${movie.poster_path}`" alt="">
+          <img style="display:none;" src="https://www.altavod.com/assets/images/poster-placeholder.png" alt=""> -->
+
+          <div>
+            <h3> {{ getTitle(movie) }} </h3>
+            <h3> {{ getOriginalTitle(movie) }} </h3>
+            <div v-if="langs.includes(movie.original_language)">
+              <img :src="`./flags/${movie.original_language}.png`" width="25">
+            </div>
+            <div v-else class="subtitle"> {{ movie.original_language }} </div>
+            <div v-html="getStars(movie.vote_average)"></div>
+          </div>
+        </div>
+    </div>
+
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js" charset="utf-8"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <script src="./main.js" charset="utf-8"></script>
+</body>
+</html>
