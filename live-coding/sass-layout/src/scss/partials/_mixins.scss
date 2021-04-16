@@ -1,0 +1,20 @@
+@mixin container-center($width) {
+  width: $width;
+  margin: 0 auto;
+}
+
+@mixin separator {
+  border-top: 1px solid $separator_color;
+}
+
+@mixin clearfix {
+  clear: both;
+  content: '';
+  display: table;
+}
+
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

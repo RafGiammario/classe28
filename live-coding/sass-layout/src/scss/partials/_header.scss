@@ -1,0 +1,13 @@
+@import '_navbar.scss';
+
+header {
+  @include container-center($container-width);
+  .title {
+    h1 {
+      text-transform: uppercase;
+      font-size: 4em;
+      letter-spacing: 3px;
+      color: $brand_primary;
+    }
+  }
+}

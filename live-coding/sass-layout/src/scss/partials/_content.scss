@@ -1,0 +1,21 @@
+main {
+  @include container-center($container-width);
+
+  section {
+    @include separator;
+
+    .gallery {
+      display: flex;
+      justify-content: space-between;
+      img {
+        width: calc(100%/3 - 10px);
+      }
+    }
+
+    @media screen and (max-width: $breakpoint-md) {
+      & {
+        background-color: green;
+      }
+    }
+  }
+}
