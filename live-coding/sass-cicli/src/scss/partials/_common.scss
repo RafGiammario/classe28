@@ -1,0 +1,26 @@
+@for $i from 1 through 8 {
+  .mt-#{$i} {
+    margin-top: 0.25em * $i;
+  }
+}
+
+$titles: h1, h2, h3, h4, h5, h6;
+@each $title in $titles {
+  #{$title} {
+    font-size: 16px;
+    font-weight: normal;
+  }
+}
+
+$types: m, p;
+@each $spacing in $types {
+  @for $i from 1 through 8 {
+    .#{$spacing}t-#{$i} {
+      @if $spacing == m {
+        margin-top: 0.25em * $i;
+      } @else {
+        padding-top: 0.25em * $i;
+      }
+    }
+  }
+}

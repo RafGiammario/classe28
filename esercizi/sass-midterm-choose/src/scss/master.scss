@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  border:0;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: sans-serif;
+  margin: 20px 0;
+  font-size: 20px;
+}
+
+body {
+  background-color: orange;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 28px;
+}
+
+.counter {
+  font-size: 64px;
+
+  &.red {
+    color: red;
+  }
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.container-horizontal {
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn {
+  padding: 5px 10px;
+  background-color: orange;
+
+  &.green {
+    background-color: green;
+  }
+}

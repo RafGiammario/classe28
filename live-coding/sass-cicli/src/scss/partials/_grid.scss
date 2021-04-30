@@ -1,0 +1,47 @@
+$breakpoints: default, sm, md, lg;
+
+@each $breakpoint in $breakpoints {
+  @if $breakpoint == default {
+    $i: 1;
+    @while $i <= 12 {
+      .col-#{$i} {
+        width: calc(100% / 12 * #{$i});
+      }
+
+      $i: $i + 1;
+    }
+  } @elseif $breakpoint == sm  {
+    @media all and (min-width: $grid-breakpoints-sm) {
+      $i: 1;
+      @while $i <= 12 {
+        .col-#{$breakpoint}-#{$i} {
+          width: calc(100% / 12 * #{$i});
+        }
+
+        $i: $i + 1;
+      }
+    }
+  } @elseif $breakpoint == md  {
+    @media all and (min-width: $grid-breakpoints-md) {
+      $i: 1;
+      @while $i <= 12 {
+        .col-#{$breakpoint}-#{$i} {
+          width: calc(100% / 12 * #{$i});
+        }
+
+        $i: $i + 1;
+      }
+    }
+  } @elseif $breakpoint == lg  {
+    @media all and (min-width: $grid-breakpoints-lg) {
+      $i: 1;
+      @while $i <= 12 {
+        .col-#{$breakpoint}-#{$i} {
+          width: calc(100% / 12 * #{$i});
+        }
+
+        $i: $i + 1;
+      }
+    }
+  }
+}
