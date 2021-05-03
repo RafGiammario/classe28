@@ -1,5 +1,4 @@
 <?php
-
   $faqs = [
     [
       "title" => [
@@ -31,38 +30,3 @@
     ]
   ];
 ?>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Google FAQ</title>
-
-  <link rel="stylesheet" href="./dist/css/master.css">
-</head>
-<body>
-  <header>
-  </header>
-  <main>
-    <?php for ($i=0; $i < count($faqs); $i++) {
-      $faq = $faqs[$i];
-    ?>
-      <<?= $faq['title']['tag'] ?>><?= $faq['title']['content'] ?></<?=$faq['title']['tag'] ?>>
-
-      <?php for ($j=0; $j < count($faq['content']) ; $j++) {
-        $content = $faq['content'][$j];
-      ?>
-
-        <<?= $content['tag'] ?>><?= $content['content'] ?></<?=$content['tag'] ?>>
-
-      <?php } ?>
-
-    <?php } ?>
-  </main>
-  <footer>
-
-  </footer>
-</body>
-</html>
