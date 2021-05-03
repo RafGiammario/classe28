@@ -1,0 +1,37 @@
+nav {
+  color: #5f6368;
+
+  a {
+    color: inherit;
+  }
+
+  .logo_title {
+    font-size: 22px;
+
+    .google_logo {
+      vertical-align: middle;
+      &:before {
+        content: url('https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_74x24px.svg');
+        display: inline-block;
+        height: 24px;
+        width: 74px;
+      }
+    }
+
+    a {
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  ul {
+    
+    li {
+      display: inline-block;
+    }
+  }
+
+}

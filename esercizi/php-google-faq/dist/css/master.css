@@ -1,5 +1,46 @@
 * {
   margin: 0;
   padding: 0;
+  border: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: "Product Sans", Arial, sans-serif;
+}
+
+.container {
+  padding: 8px;
+}
+
+.mt-2 {
+  margin-top: 0.5em;
+}
+
+nav {
+  color: #5f6368;
+}
+nav a {
+  color: inherit;
+}
+nav .logo_title {
+  font-size: 22px;
+}
+nav .logo_title .google_logo {
+  vertical-align: middle;
+}
+nav .logo_title .google_logo:before {
+  content: url("https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_74x24px.svg");
+  display: inline-block;
+  height: 24px;
+  width: 74px;
+}
+nav .logo_title a {
+  text-decoration: none;
+}
+nav .logo_title a:hover {
+  text-decoration: underline;
+}
+nav ul li {
+  display: inline-block;
 }
