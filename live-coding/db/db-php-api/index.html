@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Vue Dischi</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./master.css">
+</head>
+<body>
+  <div id="root">
+    <table>
+      <thead>
+        <tr>
+          <th>id</th>
+          <th>room number</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="stanza in stanze">
+          <td>{{stanza.id}}</td>
+          <td @click="getById(stanza.id)">{{stanza.room_number}}</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div v-if="stanza">
+      <div class="">
+        <strong> id </strong> {{ stanza.id }}
+      </div>
+      <div class="">
+        <strong> room number </strong> {{stanza.room_number}}
+      </div>
+      <div class="">
+        <strong> floor </strong> {{stanza.floor}}
+      </div>
+      <div class="">
+        <strong> beds </strong> {{stanza.beds}}
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js" charset="utf-8"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <script src="./main.js" charset="utf-8"></script>
+</body>
+</html>
