@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.admin.app')
 
 @section('content')
 <div class="container">
@@ -7,8 +7,8 @@
           <h1>{{$post->title}}</h1>
           <h4>Category:
             @if ($post->category)
-            <a href="{{ route('category.index', ['slug' => $post->category->slug])}}">{{$post->category->name}}</a>
-            @endif            
+            {{$post->category->name}}
+            @endif
           </h4>
 
           <div>
