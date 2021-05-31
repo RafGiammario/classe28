@@ -11,6 +11,8 @@
             @endif
           </h4>
 
+          <img src="{{asset($post->cover)}}" alt="{{$post->title}}">
+
           <div>
             {{$post->content}}
           </div>

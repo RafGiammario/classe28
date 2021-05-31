@@ -4,12 +4,12 @@
 <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <h3>Nuova categoria</h3>
+        <h3>Nuovo tag</h3>
       </div>
     </div>
     <div class="row justify-content-center">
       <div class="col-md-8">
-          <form action="{{route('admin.categories.store')}}" method="post">
+          <form action="{{route('admin.tags.store')}}" method="post">
             @csrf
             @method('POST')
 
